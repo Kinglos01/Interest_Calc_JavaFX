@@ -1,0 +1,13 @@
+.root{
+    -fx-background-color: rgba(169, 169, 169, 0.84);
+}
+
+.text-field{
+    -fx-background-color: #d5f3ff;
+}
+
+.label{
+    -fx-font-family: "American Typewriter";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}

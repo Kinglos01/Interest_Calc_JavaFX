@@ -12,9 +12,10 @@ public class Interest_Calc_Main extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Interest_Calc_Main.class.getResource("InterestRate.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 520, 440);
-        stage.setTitle("Hello!");
+        scene.getStylesheets().add(getClass().getResource("MyStyle.css").toExternalForm());
+
+        stage.setTitle("Interest calculator for dummies");
         stage.setScene(scene);
-        scene.getStylesheets().add(getClass().getResource("Drip.css").toExternalForm());
         stage.show();
     }
 

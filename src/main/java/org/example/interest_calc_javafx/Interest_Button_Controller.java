@@ -58,8 +58,8 @@ public class Interest_Button_Controller {
 
 
            //Displaying the text for the answer
-           Monthly_Payment_Text.setText(""+MonthInt);
-           Total_Payment_Text.setText(""+TotalInt);
+           Monthly_Payment_Text.setText("$"+MonthInt);
+           Total_Payment_Text.setText("$"+TotalInt);
 
            System.out.println(TotalInt + " " + MonthInt);
 
