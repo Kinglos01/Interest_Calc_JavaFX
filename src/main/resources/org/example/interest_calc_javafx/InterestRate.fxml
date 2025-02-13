@@ -6,7 +6,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="370.0" prefWidth="479.0" spacing="20.0" styleClass="root" stylesheets="@MyStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.interest_calc_javafx.Interest_Button_Controller">
+<VBox alignment="CENTER" prefHeight="370.0" prefWidth="479.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.interest_calc_javafx.Interest_Button_Controller">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -19,7 +19,7 @@
    </VBox>
    <VBox>
       <children>
-         <Label text="Number Of Years:" />
+         <Label text="Number of Years:" />
          <TextField fx:id="Number_of_Years_Text" />
       </children>
    </VBox>
