@@ -42,17 +42,19 @@ public class Interest_Button_Controller {
             double MonthInt;
             double AnnInt = Double.parseDouble(Annual_Interest_Rate_Text.getText());
             double NumYearsInt = Double.parseDouble(Number_of_Years_Text.getText());
-            double LoanInt = Double.parseDouble(Loan_Amount_Text.getText());
+            double PrincipleLoanInt = Double.parseDouble(Loan_Amount_Text.getText());
 
             //Changing Annual interest rate to percentage
             AnnInt = AnnInt/100;
 
-            //getting loan plus interest
-            double IntAccrued = LoanInt * AnnInt;
+            //finding total interest
 
-           TotalInt = LoanInt + IntAccrued;
+            double IntAccrued = PrincipleLoanInt * AnnInt;
 
-           //finding monthly payment
+           double TotalIntAccrued = NumYearsInt*IntAccrued;
+
+           TotalInt = TotalIntAccrued + PrincipleLoanInt;
+
            MonthInt =  Math.round(TotalInt/(NumYearsInt * 12)) ;
 
 
